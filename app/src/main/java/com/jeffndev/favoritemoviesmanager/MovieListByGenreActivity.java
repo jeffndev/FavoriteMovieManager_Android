@@ -29,7 +29,7 @@ public class MovieListByGenreActivity extends AppCompatActivity
         MovieListTask fetchMoviesTask = new MovieListTask(this);
         final Integer GENRE_ACTION = 28;
         fetchMoviesTask.execute(new Integer[]{GENRE_ACTION});
-        Snackbar.make(findViewById(R.id.content), "REACHED MOVIE LIST!!", Snackbar.LENGTH_SHORT).show();
+        //Snackbar.make(findViewById(R.id.content), "REACHED MOVIE LIST!!", Snackbar.LENGTH_SHORT).show();
     }
 
     @Override
