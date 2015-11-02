@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/jeffreynewell1/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.0/support-annotations-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="92e3fc113ec3ee36b64603a38857b95700025633">
+        <dex dex="/Users/jeffreynewell1/AndroidStudioProjects/FavoriteMoviesManager/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.0-e3982e24f1e8886b980ad270eebc1c05d50a82e7.jar" />
+    </item>
+    <item
+        jar="/Users/jeffreynewell1/AndroidStudioProjects/FavoriteMoviesManager/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3f151e49c316a5ab2c065969a3b3b55ef9b393fc">
+        <dex dex="/Users/jeffreynewell1/AndroidStudioProjects/FavoriteMoviesManager/app/build/intermediates/pre-dexed/debug/classes-4a807465e6104c32ab5534ed3ab3f4562150af6e.jar" />
+    </item>
+    <item
+        jar="/Users/jeffreynewell1/AndroidStudioProjects/FavoriteMoviesManager/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
+        <dex dex="/Users/jeffreynewell1/AndroidStudioProjects/FavoriteMoviesManager/app/build/intermediates/pre-dexed/debug/classes-d6598d60d4cb1da20f80d5989bea4b05efd5f5e8.jar" />
+    </item>
+    <item
+        jar="/Users/jeffreynewell1/AndroidStudioProjects/FavoriteMoviesManager/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/libs/internal_impl-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
+        <dex dex="/Users/jeffreynewell1/AndroidStudioProjects/FavoriteMoviesManager/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.0-6f559bec32459718e03b53f62c0f80cab25dbda3.jar" />
+    </item>
+    <item
+        jar="/Users/jeffreynewell1/AndroidStudioProjects/FavoriteMoviesManager/app/build/intermediates/exploded-aar/com.android.support/design/23.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="19026d31f5d3ae868db81319671a642be5fbba08">
+        <dex dex="/Users/jeffreynewell1/AndroidStudioProjects/FavoriteMoviesManager/app/build/intermediates/pre-dexed/debug/classes-3b16c5af4a1605a7c1546c65f4084b644af2b380.jar" />
+    </item>
+    <item
+        jar="/Users/jeffreynewell1/AndroidStudioProjects/FavoriteMoviesManager/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
+        <dex dex="/Users/jeffreynewell1/AndroidStudioProjects/FavoriteMoviesManager/app/build/intermediates/pre-dexed/debug/classes-73a922600990a83a32eba4e76f53a9104635559e.jar" />
+    </item>
+
+</items>
