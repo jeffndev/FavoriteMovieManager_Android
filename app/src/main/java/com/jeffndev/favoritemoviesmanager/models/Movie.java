@@ -1,5 +1,8 @@
 package com.jeffndev.favoritemoviesmanager.models;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -9,10 +12,37 @@ import java.util.ArrayList;
 /**
  * Created by jeffreynewell1 on 11/1/15.
  */
-public class Movie {
+public class Movie implements Parcelable {
     public String title;
     public int id;
     public String posterPath;
+
+    private Movie(Parcel in) {
+        id = in.readInt();
+        title = in.readString();
+        posterPath = in.readString();
+
+    }
+    public static final Parcelable.Creator<Movie> CREATOR = new Parcelable.Creator<Movie>() {
+        public Movie createFromParcel(Parcel in) {
+            return new Movie(in);
+        }
+        public Movie[] newArray(int size){
+            return new Movie[size];
+        }
+    };
+
+
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeInt(id);
+        dest.writeString(title);
+        dest.writeString(posterPath);
+    }
 
     public Movie(int id, String title, String posterPath){
         this.id = id;

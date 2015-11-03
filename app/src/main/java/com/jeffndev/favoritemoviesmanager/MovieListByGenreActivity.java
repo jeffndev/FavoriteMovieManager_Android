@@ -1,9 +1,11 @@
 package com.jeffndev.favoritemoviesmanager;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.jeffndev.favoritemoviesmanager.models.Movie;
@@ -29,6 +31,16 @@ public class MovieListByGenreActivity extends AppCompatActivity
         MovieListTask fetchMoviesTask = new MovieListTask(this);
         final Integer GENRE_ACTION = 28;
         fetchMoviesTask.execute(new Integer[]{GENRE_ACTION});
+        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Movie movie = (Movie)parent.getItemAtPosition(position);
+                Intent intent = new Intent(MovieListByGenreActivity.this, MovieDetailActivity.class);
+                intent.putExtra(MovieDetailActivity.CURRENT_MOVIE_PARCELABLE_KEY, movie);
+                //intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);//? or maybe also FLAG_ACTIVITY_NEW_TASK to not have it go to backstack
+                startActivity(intent);
+            }
+        });
         //Snackbar.make(findViewById(R.id.content), "REACHED MOVIE LIST!!", Snackbar.LENGTH_SHORT).show();
     }
 
