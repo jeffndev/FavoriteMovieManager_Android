@@ -23,11 +23,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MovieListByGenreActivity"
+        <activity
+            android:name=".MovieListByGenreActivity"
             android:label="Movie List">
         </activity>
-        <activity android:name=".MovieDetailActivity"
-            android:label="Movie Detail">
+        <activity
+            android:name=".MovieDetailActivity"
+            android:label="Movie Detail"
+            android:parentActivityName=".MovieListByGenreActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MovieListByGenreActivity" />
         </activity>
     </application>
 
