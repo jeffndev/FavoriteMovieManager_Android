@@ -17,6 +17,8 @@ public class Movie implements Parcelable {
     public int id;
     public String posterPath;
 
+    //TODO: Movie Genre enum with map to MoveDB keys and a short descr
+
     private Movie(Parcel in) {
         id = in.readInt();
         title = in.readString();

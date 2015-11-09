@@ -68,8 +68,12 @@ public class MovieListByGenreFragment extends Fragment
 
     @Override
     public void onFetchedMovies(ArrayList<Movie> l) {
-        mMovieListAdapter = new MovieListAdapter(getContext(), l);
-        mListView.setAdapter(mMovieListAdapter);
-        Log.v(LOG_TAG, "Movies (genre: " + mMovieGenre + ") fetched: " + l.size());
+        if( l != null) {
+            mMovieListAdapter = new MovieListAdapter(getContext(), l);
+            mListView.setAdapter(mMovieListAdapter);
+            Log.v(LOG_TAG, "Movies (genre: " + mMovieGenre + ") fetched: " + l.size());
+        }else {
+            Log.d(LOG_TAG, "Empty movies array returnedonFetchMovies, investigate bad API call");
+        }
     }
 }

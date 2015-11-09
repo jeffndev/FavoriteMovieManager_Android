@@ -72,7 +72,7 @@ public class MovieListByGenreActivity extends AppCompatActivity {
         Bundle args = new Bundle();
         args.putInt(MovieListByGenreFragment.MOVIE_GENRE_KEY, MovieListByGenreFragment.MOVIE_GENRE_ACTION);
         fragAction.setArguments(args);
-        adapter.addFragment(fragAction, "Action"); //TODO: fix this, the Label of the tab shouldn't be hidden here
+        adapter.addFragment(fragAction, "Action"); //TODO: fix this, the Label of the tab shouldn't be hidden here, and should be in RESOURCES, too
         MovieListByGenreFragment fragScifi = new MovieListByGenreFragment();
         args = new Bundle();
         args.putInt(MovieListByGenreFragment.MOVIE_GENRE_KEY, MovieListByGenreFragment.MOVIE_GENRE_SCIFI);
@@ -82,7 +82,7 @@ public class MovieListByGenreActivity extends AppCompatActivity {
         args = new Bundle();
         args.putInt(MovieListByGenreFragment.MOVIE_GENRE_KEY, MovieListByGenreFragment.MOVIE_GENRE_COMEDY);
         fragComedy.setArguments(args);
-        adapter.addFragment(fragComedy, "Comdey"); //TODO: fix this, the Label of the tab shouldn't be hidden here
+        adapter.addFragment(fragComedy, "Comedy"); //TODO: fix this, the Label of the tab shouldn't be hidden here
 
         FavoriteMoviesListFragment fragFavs = new FavoriteMoviesListFragment();
         adapter.addFragment(fragFavs, "Favorites");//TODO: fix this, the Label of the tab shouldn't be hidden here
